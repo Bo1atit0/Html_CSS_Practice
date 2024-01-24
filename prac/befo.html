@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .quote::before {
+            content: "❝";
+            font-size: 1.5em;
+            color: red;
+            margin-right: 5px;
+        }
+
+        .quote::after {
+            content: "❞";
+            font-size: 1.5em;
+            color: gray;
+            margin-left: 5px;
+        }
+    </style>
+    <title>Pseudo-elements Example</title>
+</head>
+<body>
+    <div class="quote">
+        This is a quoted text.
+    </div>
+</body>
+</html>
