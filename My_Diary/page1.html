@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -30,7 +30,7 @@
      skeleton of a webpage, giving it its basic structure and layout.
      Think of it as the foundation for displaying content on the web.
 </p>
-<h3>Anatomy Of An HTML Document</h3>
+<h3 id="anatomy">Anatomy Of An HTML Document</h3>
 <p>Anythin in HTML between <strong>&lt;!-- and --&gt;</strong> is a comment</p>
 <img src="images/anatomy.png" alt="Diagram showing the parts of an HTML document">
 <p>In case you were wondering how i added the image above, I used the &lt;img&gt; element like this:</p>
@@ -49,9 +49,31 @@
      <img src="" alt="">
 <p>Read <a href="https://ogp.me/">The Open Graph Protocol</a> to learn more</p>
 
-<h3>A Favicon</h3>
+<h3 id="favicon">A Favicon</h3>
 <p>a small icon or group of icons associated with a website.Can Mostly be seen on browser tabs(on the left
     side of the website name), bookmarks(when you bookmark a page)
 </p>
+
+<h2>Hyperlinks</h2>
+<p>Hyperlinks allow us link documents to other documents or resources, when a hyperlink is clicked it takes you to another
+    webpage
+</p>
+<p>A link is created by wrapping text or content inside the anchor &lt;a&gt; element with a 'href' attribute containing the
+    webpage you want to text to link to
+</p>
+<p>You can make almost anything a link,the heading of your website, an Image,
+    you just have to wrap it in the anchor element</p>
+<p>A title attribute can also be added to the anchor &lt;a&gt; elemnt. This title elemnt contains additional information
+    about the link
+</p>
+<p><strong>NOTE:</strong><em>URL: Uniform Resource Locator</em> - is a string of text that defines where something
+is located on the web</p>
+<h3>Document Fragments</h3>
+<p>Hyperlinks can also be used to direct users to a specific part of an HTML Document known as 'Document Fragments' rather
+    than linking to the top of the webpage
+</p>
+<p>To do this you assign an 'id' attribute to the element you want to link to</p>
+<p>You can link to a specifiic part of another webpage or the same webpage</p>
+<p></p>This will take us to the <a href="#favicon">favicon</a> part of this webpage</p>
     </body>
 </html>
