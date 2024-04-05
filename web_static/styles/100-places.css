@@ -21,6 +21,7 @@ article {
     display: flex;
     flex-direction: column;
 
+
 }
 .places h2 {
     font-size: 30px;
@@ -86,52 +87,65 @@ margin: 30px 0;
 
 /*Task 100*/
 .places .amenities {
-    margin-top: 40px;
-    width: auto;
-
+width: auto;
 
 }
-.amenities h2,
-.reviews h2 {
+.places .amenities h2,
+.places .reviews h2 {
     font-size: 16px;
     border-bottom: 1px solid #ddd;
-    margin-left: 0;
     text-align: left;
+    position: relative;
+    right: 20px;
 }
 .places .amenities ul,
-.reviews ul {
+.places .reviews ul {
     list-style: none;
-    width: auto;
-    margin-left: 0px;
-    padding: 0px;
-}
-.places .reviews ul,
-.places .amenities ul {
     padding-left: 0px;
 }
-
+/*TV*/
 .tv {
     background-image: url(../images/icon_tv.png);
-    background-repeat: no-repeat;
     background-size: cover;
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-bottom: 20px;
+}
+.tv1 {
+    display: inline-block;
+    position: relative;
+    bottom: 24px;
+    left: 10px;
 }
 
+/*Wifi*/
 .wifi {
     background-image: url(../images/icon_wifi.png);
-    background-repeat: no-repeat;
     background-size: cover;
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-bottom: 20px;
 }
+.wifi1 {
+    display: inline-block;
+    position: relative;
+    bottom: 24px;
+    left: 10px;
+}
+/*Pets*/
 .pets {
     background-image: url(../images/icon_pets.png);
-    background-repeat: no-repeat;
     background-size: cover;
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin-bottom: 0px;
+}
+.pets1 {
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+    left: 10px;
 }
