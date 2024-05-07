@@ -1,29 +1,11 @@
-body {
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    width: 100%;
-    height: 70px;
+.page{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: left;
-
-
-    background-color: white;
-    color: black;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    top: px;
-    bottom: 10px;
-    left: 80px;
+    justify-content: center;
 
 }
+
 header h2{
     margin-bottom: 0px;
 }
@@ -31,35 +13,31 @@ header h2{
     background-color: white;
     height: 350px;
     width: 100%;
-    border: 1px solid rgb(211, 205, 205);
+    border: 1px solid rgb(199, 186, 186);
 
-    color: black;
-    display: flex;
-    flex-direction: column;
+    color: rgb(233, 212, 91);
+    text-align: left;
+
+}
+
+
+.one .image {
+    position: relative;
+    background-image: url(../images/tailor.avif);
+    height: 100%;
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    left: 20%;
 
 
 
 }
-.one .text{
+.one .text {
     position: relative;
-    padding-left: 100px;
-    margin-left: 30%;
-    margin-top: 20%;
-    left: 100px;
-    bottom: 50%;
-    }
- .one .image {
-    background-image: url(../images/tailor.avif);
-
-    height: 300px;
-    width: 450px;
-    position: absolute;
-    background-size: cover;
-    background-position: left center;
-    margin: auto;
-    padding: auto;
-    left: 20%;
-    top: 15%;
+    bottom: 70%;
+    left: 49%;
 
 
 }
@@ -67,46 +45,72 @@ header h2{
 .one button {
     height: 30px;
     width: 200px;
-    border-radius: 0px;
-    border: 0;
-    background-color: rgb(211, 205, 205);
-    color: black;
-}
-.two {
-    background-color: rgb(211, 207, 207);
-    width: 100%;
-    height: 130px;
-    text-align: center;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(233, 212, 91);
+    position: relative;
+    bottom: 70%;
+    left: 49%;
 
+}
+.one button:hover {
+    cursor: pointer;
+}
+
+.two {
+    background-color: rgb(233, 212, 91);
+    width: 100%;
+    height: 150px;
+    text-align: center;
 }
 .two h3 {
-    margin: 0;
+margin: 0;
+margin-top: 20px;
+}
+.two button {
+    height: 40px;
+    width: 200px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: rgb(233, 212, 91);
+    color: white;
+}
+.two button:hover{
+    cursor: pointer;
+}
+.two button::after{
+    color: brown;
 }
 
-.three {
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    width: 100%;
-    height: 100px;
-    border: 1px solid rgb(211, 207, 207);
-    display: flex;
-    justify-content: space-around;
-    line-height: 8em;
-
-}
 .measurement {
+line-height: 10em;
 background-image: url(../images/measurement.png);
 background-size: cover;
-position: relative;
+background-position: top center;
+height: 90%;
+margin-top: 10px;
+color: rgb(233, 212, 91);
+cursor: pointer;
 }
 .design {
+    line-height: 10em;
     background-image: url(../images/design.png);
-    background-size: cover;
-    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 70%;
+    margin-top: 10px;
+    color: rgb(233, 212, 91);
+    cursor: pointer;
 }
 .fit {
-        background-image: url(../images/fit.png);
-        background-size: cover;
-        position: relative;
-        }
+    line-height: 10em;
+    background-image: url(../images/fit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 5px;
+    color: rgb(233, 212, 91);
+    cursor: pointer;
+    }
