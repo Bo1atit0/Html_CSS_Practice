@@ -3,33 +3,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    max-width: 100%;
 }
 
 header h2{
     margin-bottom: 0px;
 }
 .one {
-    background-color: white;
+    background-color: rgb(55, 61, 70);
     height: 350px;
     width: 100%;
-    border: 1px solid rgb(199, 186, 186);
 
-    color: rgb(233, 212, 91);
+
+    color: white;
     text-align: left;
+    position: relative;
 
 }
 
 
 .one .image {
     position: relative;
-    background-image: url(../images/tailor.avif);
+    background-image: url(../images/tailor2.png);
     height: 100%;
     width: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
-    left: 20%;
+    left: 30%;
 
 
 
@@ -47,8 +49,8 @@ header h2{
     width: 200px;
     border-radius: 2px;
     border: 2px solid black;
-    background-color: white;
-    color: rgb(233, 212, 91);
+    background-color: black;
+    color: white;
     position: relative;
     bottom: 70%;
     left: 49%;
@@ -56,13 +58,16 @@ header h2{
 }
 .one button:hover {
     cursor: pointer;
+    border: 2px solid turquoise;
 }
 
 .two {
-    background-color: rgb(233, 212, 91);
+    background-color: black;
     width: 100%;
     height: 150px;
     text-align: center;
+    color: aliceblue;
+    border: 1px solid black;
 }
 .two h3 {
 margin: 0;
@@ -73,11 +78,12 @@ margin-top: 20px;
     width: 200px;
     border-radius: 2px;
     border: 2px solid black;
-    background-color: rgb(233, 212, 91);
+    background-color: rgba(0, 0, 0, 0.788);
     color: white;
 }
 .two button:hover{
     cursor: pointer;
+    background-color: turquoise;
 }
 .two button::after{
     color: brown;
@@ -85,32 +91,33 @@ margin-top: 20px;
 
 .measurement {
 line-height: 10em;
-background-image: url(../images/measurement.png);
-background-size: cover;
+background-image: url(../images/measurement2.png);
+background-size: contain;
+background-repeat: no-repeat;
 background-position: top center;
-height: 90%;
+height: 70%;
 margin-top: 10px;
-color: rgb(233, 212, 91);
+color: turquoise;
 cursor: pointer;
 }
 .design {
     line-height: 10em;
-    background-image: url(../images/design.png);
+    background-image: url(../images/design2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
     height: 70%;
     margin-top: 10px;
-    color: rgb(233, 212, 91);
+    color: turquoise;
     cursor: pointer;
 }
 .fit {
     line-height: 10em;
-    background-image: url(../images/fit.png);
+    background-image: url(../images/fit2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
     margin-top: 5px;
-    color: rgb(233, 212, 91);
+    color: turquoise;
     cursor: pointer;
     }
