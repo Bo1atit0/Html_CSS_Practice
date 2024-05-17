@@ -1,0 +1,12 @@
+body{
+    max-width: 800px;
+}
+.sender-column{
+    text-align: right;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
