@@ -7,7 +7,7 @@ body{
 
 .menu{
     width: 90%;
-    background-color: rgb(243, 230, 205);
+    background-color: rgba(27, 13, 13, 0.466);
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -16,6 +16,7 @@ body{
     position: absolute;
     left: 200px;
     right: 200px;
+    color: white;
 }
 /*
 .menu:hover{
@@ -29,19 +30,20 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
 }
 .heading{
-    width: 20%;
+    width: 40%;
     background-color: white;
+    position: relative;
+    left: 30%;
 
 }
 h2{
     text-align: center;
 }
-h3{
-    text-align: center;
-    font-size: 17.2px;
-}
+
+
 .item{
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +51,7 @@ h3{
 
 }
 
-/*French Vanilla*/
+/*----------------------------FRENCH VANILLA------------------------*/
 .french-vanilla{
     position: relative;
     width: 160px;
@@ -69,7 +71,8 @@ h3{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 110px;
+    width: 240px;
+    font-size: 18px;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
@@ -85,6 +88,8 @@ h3{
     z-index: 1;
     display: none;
 }
+
+/*---------------------------BUTTON--------------------------------*/
 button{
     width: 110px;
     background-color: transparent;
@@ -93,22 +98,39 @@ button{
     border-color: brown;
     transition: opacity 0.5s ease;
 }
+
+/*-----------------------------:HOVER------------------------------*/
 button:hover{
     cursor: pointer;
 
     opacity: 0.5;
 }
-.french-vanilla:hover .image{
+.french-vanilla:hover .image,
+.caramel-macchiato:hover .image,
+.pumpkin-spice:hover .image,
+.hazelnut:hover .image,
+.mocha:hover .image,
+.coffee-drink:hover .image{
     cursor: pointer;
     opacity: 0.5;
 }
 .french-vanilla:hover .text,
-.french-vanilla:hover .order{
+.french-vanilla:hover .order,
+.caramel-macchiato:hover .text,
+.caramel-macchiato:hover .order,
+.pumpkin-spice:hover .text,
+.pumpkin-spice:hover .order,
+.hazelnut:hover .text,
+.hazelnut:hover .order,
+.mocha:hover .text,
+.mocha:hover .order,
+.coffee-drink:hover .text,
+.coffee-drink:hover .order{
     display: block;
     cursor: pointer;
 }
 
-/*Caramel Macchiato*/
+/*---------------------------Caramel Macchiato---------------------*/
 .caramel-macchiato{
     position: relative;
     width: 160px;
@@ -122,7 +144,7 @@ button:hover{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease ;
 }
 /*.caramel-macchiato .text{
     position: absolute;
@@ -131,36 +153,131 @@ button:hover{
     transform: translate(-50%, -50%);
 }*/
 
+/*--------------------------Pumpkin Spice--------------------------*/
 .pumpkin-spice{
-    background-image: url(images/pumpkin\ spice.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
     width: 160px;
     height: 160px;
     margin-bottom: 10px;
+    position: relative;
 
 }
+.pumpkin-spice .image{
+    background-image: url(images/pumpkin\ spice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.pumpkin-spice .text{
+    position: absolute;
+    top: 76px;
+    left: 80px;
+    width: 100%;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+.pumpkin-spice .order{
+    position: absolute;
+    top: 90px;
+    text-align: center;
+    left: 20px;
+    display: none;
+}
+
+/*-----------------------------HAZLENUT---------------------------*/
 .hazelnut{
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+    position: relative;
+}
+.hazelnut .image{
     background-image: url(images/hazlenut.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.hazelnut .text{
+    position: absolute;
+    top: 80px;
+    left: 86px;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    display: none;
+}
+.hazelnut .order{
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    transform: translate(-50px, -50px);
+    display: none;
+}
+
+
+
+/*---------------------------------MOCHA----------------------------*/
+.mocha{
     width: 160px;
     height: 160px;
     margin-right: 10px;
+    position: relative;
 }
-.mocha{
+.mocha .image{
     background-image: url(images/mocha.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.mocha .text{
+
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    display: none;
+}
+.mocha .order{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+/*--------------------------COFFEE---------------------------------*/
+.coffee-drink{
     width: 160px;
     height: 160px;
-    margin-right: 10px;
+    position: relative;
 }
-.coffee-drink{
+.coffee-drink .image{
     background-image: url(images/coffee.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 160px;
-    height: 160px;
-
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+.coffee-drink .text{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    display: none;
+}
+.coffee-drink .order{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    display: none;
 }
