@@ -1,55 +1,4 @@
-body{
-    background-image: url(images/f40555e2b1c3b2e3210f85d759896b22.jpg);
-    width: 100%;
-    height: 100%;
 
-}
-
-.menu{
-    width: 90%;
-    background-color: rgba(27, 13, 13, 0.466);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
-    transition: background-color 2s ease;
-    position: absolute;
-    left: 200px;
-    right: 200px;
-    color: white;
-}
-/*
-.menu:hover{
-    cursor: pointer;
-    background-color: aqua;
-    opacity: 1;
-}
-*/
-.heading h1{
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-}
-.heading{
-    width: 40%;
-    background-color: white;
-    position: relative;
-    left: 30%;
-
-}
-h2{
-    text-align: center;
-}
-
-
-.item{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 /*----------------------------FRENCH VANILLA------------------------*/
 .french-vanilla{
@@ -61,6 +10,7 @@ h2{
 }
 .french-vanilla .image{
     background-image: url(images/french_vanilla.jpg);
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -140,6 +90,7 @@ button:hover{
 }
 .caramel-macchiato .image{
     background-image: url(images/caramel\ macchiato.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -164,6 +115,7 @@ button:hover{
 }
 .pumpkin-spice .image{
     background-image: url(images/pumpkin\ spice.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -197,6 +149,7 @@ button:hover{
 }
 .hazelnut .image{
     background-image: url(images/hazlenut.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -230,6 +183,7 @@ button:hover{
 }
 .mocha .image{
     background-image: url(images/mocha.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -260,6 +214,7 @@ button:hover{
 }
 .coffee-drink .image{
     background-image: url(images/coffee.jpg);
+    background-position:  center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

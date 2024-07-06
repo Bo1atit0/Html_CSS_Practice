@@ -1,0 +1,141 @@
+/*-----------------DESSERTS------------DESSERTS--------------------*/
+.desserts{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.desserts article{
+    width: 160px;
+
+}
+
+/*-----------------------------DONUT-------------------------------*/
+.donut{
+    position: relative;
+    width: 160px;
+    margin-right: 5px;
+
+}
+.donut .image{
+    background-image: url(images/Desserts/donut.jpg);
+    background-position: center;
+
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+
+    transition: opacity 0.5s ease-in;
+
+}
+.donut .text{
+    position: absolute;
+    top: 5.9em;
+    left: 80px;
+    font-size: 30px;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: none;
+
+}
+.donut .order{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15em;
+    left: 80px;
+    text-align: center;
+    display: none;
+
+}
+
+
+
+.desserts:hover .image{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.donut:hover .order,
+.donut:hover .text,
+.cherry-pie:hover .order,
+.cherry-pie:hover .text,
+.cheese-cake:hover .order,
+.cheese-cake:hover .text {
+    cursor: pointer;
+    display: block;
+}
+
+/*------------------------------CHERRY PIE-------------------------*/
+.cherry-pie {
+    position: relative;
+    width: 160px;
+
+    margin-left: 5px;
+}
+.cherry-pie .image {
+    background-image: url(images/Desserts/cherry\ pie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    z-index: 1;
+
+}
+.cherry-pie .text {
+    position: absolute;
+    top: 5.9em;
+    left: 80px;
+    font-size: 30px;
+
+    color: white;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.cherry-pie .order{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15em;
+    text-align: center;
+    left: 80px;
+    display: none;
+}
+
+/********CHEESE CAKE************CHEESE CAKE*************/
+
+.cheese-cake {
+    position: relative;
+    width: 160px;
+
+    margin-left: 5px;
+}
+.cheese-cake .image {
+    background-image: url(images/Desserts/cc.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+
+
+}
+.cheese-cake .text {
+    position: absolute;
+    top: 6.4em;
+    left: 79px;
+    font-size: 28px;
+    width: 190px;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.cheese-cake .order{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15em;
+    text-align: center;
+    left: 80px;
+    display: none;
+}
