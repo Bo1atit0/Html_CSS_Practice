@@ -1,1 +1,0 @@
-This repository contains all my practice codes for the MDN Frontend Developer's Curriculum.
