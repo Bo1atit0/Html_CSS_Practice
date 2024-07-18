@@ -1,0 +1,12 @@
+.container {
+    width: 90%;
+    background-color: lightgrey;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box {
+    background-color: coral;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
